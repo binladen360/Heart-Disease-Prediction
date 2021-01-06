@@ -29,15 +29,15 @@ def predict():
 
     output = prediction
 
-    # Check the output values and retrive the result with html tag based on the value
+    # Check the output values and retrieve the result with html tag based on the value
     if output == 1:
         return render_template('Heart Disease Classifier.html',
-                               result='Have heart disease!')
+                               result='Have Heart Disease!')
     else:
         return render_template('Heart Disease Classifier.html',
-                               result='No heart disease!')
+                               result='No Heart Disease!')
 
 
 if __name__ == '__main__':
     # Run the application
-    app.run()
+    app.run(debug=True)
